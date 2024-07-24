@@ -1,5 +1,13 @@
-"func" @keyword
-"return" @keyword
-(type_identifier) @type
-(int_literal) @number
-(function_declaration name: (identifier) @function)
+(ident) @variable
+(type) @type
+(typename) @type.definition
+(number) @literal.number
+"alias" @keyword
+"extern" @keyword
+"type" @keyword.type
+"let" @keyword
+"if" @keyword.conditional
+"else" @keyword.conditional
+"fn" @keyword.function
+(string) @string
+(bool) @boolean

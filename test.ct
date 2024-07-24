@@ -1,9 +1,13 @@
-def process_list(list)
-  context = current_context
-  list.map do |item|
-    process_item(item, context)
-  end
-end
+alias string = [int];
+extern printstr: fn(string): unit;
+extern printint: fn(int): unit;
+extern getindex: fn([int], int): int;
+extern setindex: fn([int], int, int): unit;
 
-item = 5
-list = [item]
+let greeting = fn(str: string): string {
+	str
+};
+let main = fn() {
+	let arr = [1,2,3+2];
+	printstr("hello world")
+};
